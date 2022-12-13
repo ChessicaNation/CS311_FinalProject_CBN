@@ -1,0 +1,73 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#e5e5e5;
+    padding: 10px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    grid-area: title;
+    justify-self: center;
+    padding: 10px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    width: 610px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "title title"
+                            "convert1 convert2"
+                            "button button";
+    background-color:#b4c5e4;
+    padding: 0px 20px 10px 20px;
+    margin-bottom: 20px;
+    column-gap: 20px;
+    border: 2px solid black;
+}
+
+.from{
+    grid-area: convert1;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.to{
+    grid-area: convert2;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.convert{
+    grid-area: button;
+    justify-self: center;
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    background-color: #3066be;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+

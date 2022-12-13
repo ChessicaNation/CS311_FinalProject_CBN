@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="css/properties.css"/>
+    </head>
+    <body>
+    
+        <h1>Unit Converter</h1>
+        <p>Enter the value you wish to convert in the "From" field and select which unit you would like to convert from.</p>
+        <p>Then, click the "Convert!"" button and the converted value will be displayed in the "To" field.</p>
+
+        <div class="container" id="meters-feet">
+            <h3>Meters &harr; Feet</h3>
+            <div class="from" id="meters-feet">
+                <label for="from-meters-feet">From:</label>
+                <input type="text" id="input-meters-feet"><br><br>
+
+                <input type="radio" id="from" name="from-meters-feet" value="Meters">
+                <label for="meters">Meters</label><br>
+                <input type="radio" id="from" name="from-meters-feet" value="Feet">
+                <label for="feet">Feet</label><br>
+            </div>
+            <div class="to" id="meters-feet">
+                <label for="to-meters-feet">To:</label>
+                <span id="output-to-meters-feet"></span><br><br>
+            </div>
+            <button class="convert" id="convert-meters-feet" onclick="convertButton('meters-feet')">Convert!</button>
+        </div>
+
+        <div class="container" id="km-miles">
+            <h3>Kilometers &harr; Miles</h3>
+            <div class="from" id="km-miles">
+                <label for="from-km-miles">From:</label>
+                <input type="text" id="input-km-miles"><br><br>
+
+                <input type="radio" id="from" name="from-km-miles" value="Kilometers">
+                <label for="kilometers">Kilometers</label><br>
+                <input type="radio" id="from" name="from-km-miles" value="Miles">
+                <label for="miles">Miles</label><br>
+            </div>
+            <div class="to" id="km-miles">
+                <label for="to-km-miles">To:</label>
+                <span id="output-to-km-miles"></span><br><br>
+            </div>
+            <button class="convert" id="convert-km-miles" onclick="convertButton('km-miles')">Convert!</button>
+        </div>
+
+        <div class="container" id="cels-fahr">
+            <h3>Celsius &harr; Fahrenheit</h3>
+            <div class="from" id="cels-fahr">
+                <label for="from-cels-fahr">From:</label>
+                <input type="text" id="input-cels-fahr"><br><br>
+
+                <input type="radio" id="from" name="from-cels-fahr" value="Celsius">
+                <label for="celsius">Celsius</label><br>
+                <input type="radio" id="from" name="from-cels-fahr" value="Fahrenheit">
+                <label for="fahrenheit">Fahrenheit</label><br>
+            </div>
+            <div class="to" id="cels-fahr">
+                <label for="to-cels-fahr">To:</label>
+                <span id="output-to-cels-fahr"></span><br><br>
+            </div>
+            <button class="convert" id="convert-cels-fahr" onclick="convertButton('cels-fahr')">Convert!</button>
+        </div>
+
+        <div class="container" id="kg-lbs">
+            <h3>Kilograms &harr; Pounds</h3>
+            <div class="from" id="kg-lbs">
+                <label for="from-kg-lbs">From:</label>
+                <input type="text" id="input-kg-lbs"><br><br>
+
+                <input type="radio" id="from" name="from-kg-lbs" value="Kilograms">
+                <label for="kilograms">Kilograms</label><br>
+                <input type="radio" id="from" name="from-kg-lbs" value="Pounds">
+                <label for="pounds">Pounds</label><br>
+            </div>
+            <div class="to" id="kg-lbs">
+                <label for="to-kg-lbs">To:</label>
+                <span id="output-to-kg-lbs"></span><br><br>
+            </div>
+            <button class="convert" id="convert-kg-lbs" onclick="convertButton('kg-lbs')">Convert!</button>
+        </div>
+
+        <div class="container" id="grams-oz">
+            <h3>Grams &harr; Ounces</h3>
+            <div class="from" id="grams-oz">
+                <label for="from-grams-oz">From:</label>
+                <input type="text" id="input-grams-oz"><br><br>
+
+                <input type="radio" id="from" name="from-grams-oz" value="Grams">
+                <label for="grams">Grams</label><br>
+                <input type="radio" id="from" name="from-grams-oz" value="Ounces">
+                <label for="ounces">Ounces</label><br>
+            </div>
+            <div class="to" id="grams-oz">
+                <label for="to-grams-oz">To:</label>
+                <span id="output-to-grams-oz"></span><br><br>
+            </div>
+            <button class="convert" id="convert-grams-oz" onclick="convertButton('grams-oz')">Convert!</button>
+        </div>
+
+        <script src='js/properties.js'></script>
+    </body>
+</html>
